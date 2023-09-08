@@ -1,0 +1,29 @@
+body {
+    background-color:cornsilk;
+}
+
+img {
+    display: block;
+}
+
+#image {
+    height: auto;
+    max-width: 100%;
+    margin: auto 0;
+}
+
+#title {
+    text-align: center;
+}
+
+#paragraph {
+    text-align: center;
+}
+
+#img-div > #img-caption {
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}

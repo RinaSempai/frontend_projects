@@ -1,0 +1,40 @@
+body {
+    width: 99%;
+    height: 100vh;
+    background-color: blueviolet;
+    color: #fff;
+    font-family: 'Arial';
+    font-size: large;
+}
+
+label {
+    display: block;
+    margin: 0.5em;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    background-color: #30dd3f;
+    margin-bottom: 3em;
+}

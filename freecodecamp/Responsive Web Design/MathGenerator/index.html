@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Генератор примеров</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .generated-row {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    #generateButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+
+    #generateButton:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Генератор примеров</h1>
+  <div id="generatedStrings"></div>
+  <button id="generateButton">Сгенерировать</button>
+
+  <script>
+    function generateRandomValue(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function generateRandomOperator() {
+      return Math.random() < 0.5 ? '+' : '-'; // Рандомно выбираем плюс или минус
+    }
+
+    document.getElementById("generateButton").addEventListener("click", function() {
+      const generatedStringsDiv = document.getElementById("generatedStrings");
+      generatedStringsDiv.innerHTML = ''; // Очищаем предыдущий вывод
+
+      for (let i = 0; i < 10; i++) {
+        const number1 = generateRandomValue(1, 10);
+        const number2 = generateRandomValue(1, 10);
+        const number3 = generateRandomValue(1, 10);
+        const operator1 = generateRandomOperator();
+        const operator2 = generateRandomOperator();
+
+        const generatedRow = document.createElement("div");
+        generatedRow.classList.add("generated-row");
+        generatedRow.textContent = `${number1} ${operator1} ${number2} ${operator2} ${number3}`;
+
+        generatedStringsDiv.appendChild(generatedRow);
+      }
+    });
+  </script>
+</body>
+</html>

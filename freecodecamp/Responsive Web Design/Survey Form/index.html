@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name<input id="name" required type="text" placeholder="Enter your name"/></label>
+            <label id="email-label" for="email">Email<input id="email" required type="email" placeholder="Enter your email"/></label>
+            <label id="number-label" for="number">Age(optional)<input id="number" type="number" min="7" max="99" placeholder="Enter your age"/></label>
+            <label for="dropdown">Which option best describes your current role?
+                <select id="dropdown">
+                    <option value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="full-time-learner">Full Time Learner</option>
+                    <option value="prefer-not-to-say">Prdefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label>Would you recommend freeCodeCamp to a friend?
+                <label><input class="inline" id="definitely" name="name" type="radio" value="definitely"/> Definitely</label>
+                <label><input class="inline" id="maybe" name="name" type="radio" value="maybe"/> Maybe</label>
+                <label><input class="inline" id="not-sure" name="name" type="radio" value="not-sure"/> Not sure</label>
+            </label>
+            <label>What would you like to see improved? (Check all that apply)
+                <label for="front-end-projects"><input class="inline" name="front-end-projects" id="front-end-projects" value="front-end-projects" type="checkbox"/> Front-end Projects</label>
+                <label for="back-end-projects"><input class="inline" name="back-end-projects" id="back-end-projects" value="back-end-projects" type="checkbox"/> Back-end Projects</label>
+                <label for="data-visualisation"><input class="inline" name="data-visualisation" id="data-visualisation" value="data-visualisation" type="checkbox"/> Data Visualization</label>
+                <label for="challenges"><input class="inline" name="challenges" id="challenges" value="challenges" type="checkbox"/> Challenges</label>
+                <label for="open-source-community"><input class="inline" name="open-source-community" id="open-source-community" value="open-source-community" type="checkbox"/> Open Source Community</label>
+                <label for="gitter-help-rooms"><input class="inline" name="gitter-help-rooms" id="gitter-help-rooms" value="gitter-help-rooms" type="checkbox"/> Gitter help rooms</label>
+                <label for="Videos"><input class="inline" name="videos" id="videos" value="videos" type="checkbox"/> Videos</label>
+                <label for="city-meetups"><input class="inline" name="city-meetups" id="city-meetups" value="city-meetups" type="checkbox"/> City Meetups</label>
+                <label for="wiki"><input class="inline" name="wiki" id="wiki" value="wiki" type="checkbox"/> Wiki</label>
+                <label for="forum"><input class="inline" name="forum" id="forum" value="forum" type="checkbox"/> Forum</label>
+                <label for="additional-courses"><input class="inline" name="additional-courses" id="additional-courses" value="additional-courses" type="checkbox"/> Additional Courses</label>
+            </label>
+            <label>Any comments or suggestions?
+                <textarea rows="5" cols="70" placeholder="Enter your comments here..."></textarea>
+            </label>
+            <input id="submit" type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ecdb5a;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: block;
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+#header-img {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 50vw;
+}
+
+body {
+    padding-top: 100px;
+}
+
+.title {
+    text-align: center;
+}
+
+nav > ul > li > a {
+    text-decoration-line: none;
+    color:chocolate;
+    font-size: larger;
+}
+
+nav > ul > li {
+    list-style-type: none;
+}
+
+input {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+}
+
+#submit {
+    margin-top: 10px;
+    background-color: #ecdb5a;
+    width: 10vw;
+    height: 15%;
+}
+
+#email {
+    width: 20vw;
+    height: 15%
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+#how-it-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#pricing {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.product {
+    padding-top: 2%;
+    padding: 2px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 2px;
+    background-color: aqua;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #ecdb5a;
+    border-color: #ecdb5a;
+}
+
+.level {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 420px) {
+    nav > ul > li > a {
+      font-size: 4.5rem;
+    }
+}
